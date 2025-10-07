@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <!-- owl carousel used in designing services swiping effect -->
+
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+  <!-- owl carousel used in designing services swiping effect -->
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- animation on scroll library used in making images to appear as if they are falling down into motion -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- link rel for testimonial slide -->
+
+  <title>SIMEL</title>
+</head>
+
+<body>
+
+  <!-- start of bg -->
+  <div class="bg">
+    <nav class="navbar navbar-expand-lg fixed-top 1030 bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-light simel" href="#">SI<span class="text-warning">MEL</span> </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#services">Services</a>
+            </li>
+
+            <!--start of code for dropdown link -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu bg-dark text-justify">
+                <li><a class="dropdown-item text-light bg-dark" href="tyres.html">Tyres & Wheels</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="battery.html">Batteries</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="fluid.html">Fluids & Chemicals</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="caraccess.html">Car accesories</a></li>
+              </ul>
+            </li>
+            <!-- end of code for dropdown link -->
+           
+            <li class="nav-item">
+              <a class="nav-link text-light" href="cart.html">
+                <div class="position-relative d-inline-block">
+                  <i class="fas fa-cart-shopping fa-lg"></i>
+                  <span id="cart-count"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                    0
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- start of bg content -->
+    <div class="bgcontent container text-dark text-center">
+
+      <!-- manages the aos effect for the h4 tag -->
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <h4 class="fw-bold text-warning">GIVE YOUR CAR THE BEST TREAT</h4>
+      </div>
+      <!-- manages the aos effect for the h1 tag -->
+      <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+        <h1 class="text-light pt-3 pb-2">YOUR ONE STOP AUTOMOBILE SHOP</h1>
+      </div>
+      <!-- check app.js for line of code that controls the typing effect -->
+      <h2 class="text-light pt-3 pb-3">WE SELL <span class="auto-type text-warning"></span> </h2>
+      <button class="btn1 fw-bold "><a href="tyres.html">SHOP NOW</a></button>
+    </div>
+    <!-- end of bg content -->
+  </div>
+  <!-- end of bg -->
+
+
+  <!-- start of standard -->
+  <section class="standard">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-3 standard2">
+          <i class="fa-solid fa-gauge-high pb-2 "></i>
+          <h4>Best Quality</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quidem! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cum, voluptates.</p>
+        </div>
+        <div class="col-md-3 standard2">
+          <i class="fa-solid fa-car pb-2 "></i>
+          <h4>Exceptional products</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, vel. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Cum, voluptates.</p>
+        </div>
+        <div class="col-md-3 standard2">
+          <i class="fa-solid fa-user-shield pb-2"></i>
+          <h4>Trained Proffesionals</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dicta. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Cum, voluptates.</p>
+        </div>
+        <div class="col-md-3 standard2">
+          <i class="fa-solid fa-truck pb-2"></i>
+          <h4>Fast delievery</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dicta. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Cum, voluptates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of standard -->
+
+  <!--start of about  -->
+  <!-- the id: about is what controls the about icon in the navbar -->
+  <div id="about">
+    <section class="about p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+
+            <!-- start of aos -->
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">
+              <h3 class="pb-3">About <span class="text-warning fw-bold">SIMEL</span> </h3>
+              <p>Simel is your one stop shop for all your automobile needs. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Assumenda, dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, beatae necessitatibus reprehenderit praesentium rerum similique odio molestiae? Soluta
+                consectetur enim nisi adipisci aperiam fugiat ipsa laborum? Neque mollitia molestiae consequuntur soluta
+                illo harum. Tempora, nesciunt ex? Voluptatibus in tenetur ipsum!</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem est animi voluptas blanditiis? At
+                exercitationem, temporibus culpa deserunt facere incidunt sed reprehenderit! Incidunt doloremque quo
+                mollitia placeat quam inventore a, ducimus at praesentium voluptas molestias. A alias quaerat
+                necessitatibus
+                libero.</p>
+            </div>
+            <!-- end of aos -->
+          </div>
+          <div class="col-md-6">
+            <img src="../images/about1.webp" class="img-fluid w-100 object-fit-cover" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--end of about  -->
+
+
+  <!-- start of services -->
+  <!-- the id: services is what controls the services icon in the navbar -->
+  <div id="services">
+    <section class="p-5 bg-dark">
+      <div class="container  service">
+        <h3 class="text-warning  py-4">Services</h3>
+        <!-- start of owl carousel slider -->
+        <div class="owl-carousel owl-theme">
+          <img src="../images/serv1a.jpg" alt="">
+          <img src="../images/serv1.webp" alt="">
+          <img src="../images/serv2.jpg" alt="">
+          <img src="../images/serv4.jpeg" alt="">
+          <img src="../images/serv5.jpg" alt="">
+          <img src="../images/serv6.jpeg" alt="">
+          <img src="../images/serv7.jpeg" alt="">
+        </div>
+        <!-- end of owl carousel slider -->
+        <div class="text-light text-center pt-4">
+          <p> At our physical and online store, we offer you variety of services ranging from sales of tyres, batteries,
+            lubricants, inverter batteries, car accesories such as car footmats, car airfresheners, gear and engine oil,
+            and much more. If you are opportuned to drive into our head office which is located at <b>No 79 Stadium
+              Road,
+              we have a well equipped and organised
+              complete tyre solution center where we offer you services such as wheel balancing and alignment, tyre
+              changing, charging of batteries , refilling of engine oil and much more.</b> </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end of services -->
+
+
+  <!-- start of hottake -->
+  <section>
+    <h3 class="text-dark text-start p-5 ">What's Hot</h3>
+    <div class="container hotake">
+      <div class="row gy-5">
+        <div class="col-md-4">
+          <!-- opening tag aos -->
+          <div data-aos="fade-down" data-aos-duration="3000">
+            <div class="bg2">
+              <h3>Customised Wheels For Your Premium Cars </h3>
+              <h1 class="text-warning">20%</h1>
+              <img src="../images/wheels1.png" class="img-fluid  wheel " alt="">
+              <div>
+                <a href="tyres.html" class="text-decoration-none">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+          <!-- closing tag aos -->
+        </div>
+        <!-- closing tag col-md-4 -->
+
+
+        <div class="col-md-4">
+          <!-- start of aos -->
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <div class="bg2">
+              <h3>Super Sale Off For Clearance </h3>
+              <h1 class="text-warning">40%</h1>
+              <img src="../images/tyre3.png" class="img-fluid wheel " alt="">
+              <div>
+                <a href="battery.html" class="text-decoration-none">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+          <!-- close of aos -->
+        </div>
+
+
+        <div class="col-md-4 ">
+          <!-- start of aos -->
+          <div data-aos="fade-down" data-aos-duration="3000">
+            <div class="bg2">
+              <h3>Super Sale Off For Clearance </h3>
+              <h1 class="text-warning">10%</h1>
+              <img src="../images/tyre1.png" class="img-fluid wheel " alt="">
+              <div>
+                <a href="tyres.html" class="text-decoration-none">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+          <!-- close of aos -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of hotake -->
+
+  <!-- start of best seller -->
+  <section class="pt-5 pb-5">
+    <h3 class="text-dark  p-5 text-start">Best Seller</h3>
+    <div class="container bestseller">
+      <div class="row gy-5">
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/item1.jpeg" class="img-fluid" alt="">
+              <h5>STEERING COVER</h5>
+              <p>NGN 53,000</p>
+              <div class="stars">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/item2.jpg" class="img-fluid" alt="">
+              <h5>EXHAUST SYSTEM</h5>
+              <p>NGN 44,000</p>
+              <div class="stars">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/item3.jpeg" class="img-fluid" alt="">
+              <h5>CAR SPEAKER</h5>
+              <p>NGN 40,000</p>
+              <div class="stars">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/item4.jpeg" class="img-fluid" alt="">
+              <h5>TYRE PUMP</h5>
+              <p>NGN 43,000</p>
+              <div class="stars">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/item5.jpeg" class="img-fluid" alt="">
+              <h5>AIR FILTER</h5>
+              <p>NGN 50,000</p>
+              <div class="stars">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/item6.jpg" class="img-fluid" alt="">
+              <h5>CAR HEAD LAMP</h5>
+              <p>NGN 28,000</p>
+              <div class="stars">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/item7.jpg" class="img-fluid" alt="">
+              <h5>BOLT AND NUTS</h5>
+              <p>NGN 34,000</p>
+              <div class="stars">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../images/item8.jpeg" class="img-fluid" alt="">
+              <h5>CAR WIPER</h5>
+              <p>NGN 24,000</p>
+              <div class="stars">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end of best seller -->
+
+
+  <!-- start of categories -->
+  <section class="categories">
+    <h3 class="text-dark  p-5 text-start">Shop by Categories</h3>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-6 col-md-2">
+          <div class="bg3">
+            <img src="../images/item9.png" class="img-fluid p-5 " alt="">
+            <div>
+              <a href="tyres.html" class="fw-bold">Tyres</a>
+              <p class="pb-4 pt-2">Maxxis, Firestone</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <div class="bg3">
+            <img src="../images/item15.jpeg" class="img-fluid " alt="">
+            <div>
+              <a href="battery.html" class="fw-bold">Batteries</a>
+              <p class="pb-4 pt-2">Delkor, Everstart</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <div class="bg3">
+            <img src="../images/item10.png" class="img-fluid pt-5 pb-2" alt="">
+            <div>
+              <a href="tyres.html" class="fw-bold">Wheels</a>
+              <p class="pb-4 pt-2">Maxxis, Firestone</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <div class="bg3">
+            <img src="../images/item11.jpeg" class="img-fluid pt-2 " alt="">
+            <div>
+              <a href="fluid.html" class="fw-bold">Lubricants</a>
+              <p class="pb-3 pt-2">Mobil1, Seahorse</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <div class="bg3">
+            <img src="../images/item1.jpeg" class="img-fluid  " alt="">
+            <div>
+              <a href="caraccess.html" class="fw-bold">Car Accessories</a>
+              <p class="pb-1 pt-2">Footmat, Steering cover</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <div class="bg3">
+            <img src="../images/item12.png" class="img-fluid pt-5 pb-5 " alt="">
+            <div>
+              <a href="caraccess.html" class="fw-bold">DIY Tools</a>
+              <p class="pb-4 pt-2 ">Spanner, Screwdriver</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end of categories -->
+
+
+  <!-- start of feautured brands -->
+  <h3 class="text-dark  p-5 text-start">Feautured Brands</h3>
+  <!-- OPENING TAG FOR AOS -->
+  <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+    <section class=" container">
+      <div class="container border">
+        <div class="row gy-5 ">
+          <!-- col3 is for smallest size screen col-md-3 is for medium size scren upwards display -->
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo3.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo10.jpeg" class="img-fluid w-100 " alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo11.jpeg" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo2.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo1.jpeg" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo7.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo9.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo5.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo4.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo6.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo7.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-3 col-md-3 border">
+            <img src="../images/logo8.jpeg" class="img-fluid w-100" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- CLOSING TAG FOR AOS -->
+  <!-- end of feautured brands -->
+
+
+  <!-- start of testimonial -->
+  <section class="test p-5">
+    <div class="container py-5">
+      <h2 class="text-center mb-5">What Our Clients Say</h2>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Testimonial 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="./images/test1.jpg" class="rounded-circle testimonial-img mb-3" alt="Client 1">
+              <p class="fst-italic">"Amazing service! They truly understand our business needs and deliver top-quality
+                work."</p>
+              <h5 class="mb-0">Alice Johnson</h5>
+              <small class="text-muted">CEO, TechCorp</small>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="./images/test2.webp" class="rounded-circle testimonial-img mb-3" alt="Client 2">
+              <p class="fst-italic">"Professional, responsive, and exceeded all expectations. Highly recommended!"</p>
+              <h5 class="mb-0">Mary Smith</h5>
+              <small class="text-muted">Founder, StartUpHub</small>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="./images/man1.webp" class="rounded-circle testimonial-img mb-3" alt="Client 3">
+              <p class="fst-italic">"Their attention to detail is unmatched. A fantastic experience from start to
+                finish."
+              </p>
+              <h5 class="mb-0">Michael Lee</h5>
+              <small class="text-muted">Marketing Lead, BrightSolutions</small>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="./images/man2.webp" class="rounded-circle testimonial-img mb-3" alt="Client 4">
+              <p class="fst-italic">"Their attention to detail is unmatched. A fantastic experience from start to
+                finish."
+              </p>
+              <h5 class="mb-0">Reuben Mark</h5>
+              <small class="text-muted">Marketing Lead, BrightSolutions</small>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="./images/man3.webp" class="rounded-circle testimonial-img mb-3" alt="Client 5">
+              <p class="fst-italic">"Their attention to detail is unmatched. A fantastic experience from start to
+                finish."
+              </p>
+              <h5 class="mb-0">Matthew Thomas</h5>
+              <small class="text-muted">Marketing Lead, BrightSolutions</small>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators mt-4">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of testimonial -->
+
+
+
+  <!-- start of contact us -->
+  <!-- id:contact is linked to contact on the navbar -->
+  <div id="contact">
+    <section class="pt-5  pb-5">
+
+      <h3 class="text-dark pb-2 px-5 text-start">Contact <span class="text-warning fw-bold">Us</span></h3>
+      <div class="container">
+        <div class="row gx-5 contact">
+          <div class="col-md-6 pt-5">
+            <!-- opening tag for aos -->
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <p>For all your car needs ranging from tyre, batteries, car wheels, lubricants, DIY tools, car accesories
+                and
+                much more. Book an appiontment with us at our complete tyre solution center for your steering wheel
+                alignment, changing of oilfilter and engine oil, wheel balancing and alignment, fixing and checking of
+                your
+                car tyres and batteries. We have trained proffessionals that are skiled at giving your car premium
+                services
+              </p>
+
+              <p><i class="fas fa-paper-plane text-warning"></i> tyrepalace@gmail.com</p>
+              <p><i class="fas fa-phone-square-alt text-warning"></i>+2348037085784, +234803939446</p>
+              <p class="fw-bold pt-4">Our Social media handles</p>
+              <div class="social-icons">
+                <i class="fab fa-whatsapp "></i>
+                <i class="fab fa-facebook "></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <!-- closing tag for aos -->
+
+
+          <div class="col-md-6">
+            <div class=" text-dark py-5">
+              <form action="" class="container">
+                <div class="mb-3">
+                  <input type="text" placeholder="Enter your Name" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <input type="text" placeholder="Enter your Email address" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <input type="text" placeholder="Enter your Phone number" class="form-control">
+                </div>
+                <div>
+                  <textarea class="form-control" name="" id="" cols="70" rows="5" placeholder="Message"></textarea>
+                </div>
+                <div class="pt-4">
+                  <a class="btn btn-warning " href="">SEND MESSAGE</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end of contact us -->
+
+
+  <!-- start of numbers -->
+  <section class="numbers">
+    <h3 class="text-dark pb-5 px-5 text-center">Our Numbers</h3>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-3">
+          <h1>10+</h1>
+          <p class="fw-bold">Trained Staff</p>
+        </div>
+        <div class="col-md-3">
+          <h1>4</h1>
+          <p class="fw-bold">Branches</p>
+        </div>
+        <div class="col-md-3">
+          <h1 id="counter"></h1>
+          <p class="fw-bold">Satisfied Clients</p>
+        </div>
+        <div class="col-md-3">
+          <h1 id="counter2"></h1>
+          <p class="fw-bold">Jobs Done</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end of numbers -->
+
+
+  <!-- start of footer -->
+
+  <footer class="bg-dark p-5">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-md-3">
+
+          <p class="text-light fw-bold pb-2">Contact Us</p>
+          <p class="text-light pt-2">Call us 24/7</p>
+          <p class="text-warning fw-bold">0803939446</p>
+          <p class="text-warning fw-bold">O8063711939</p>
+          <p class="text-warning fw-bold">07037633703</p>
+          <p class="text-light">tyrepalace@gmail.com</p>
+          <p class="fw-bold text-light">Opening Hours</p>
+          <p class="text-light">Monday - Saturdays </p>
+          <p class="text-light">7:00am - 6:00pm</p>
+        </div>
+        <div class="col-md-3">
+          <p class="text-light fw-bold pb-2">Address </p>
+          <p class="text-light fw-bold pt-2">Head Office:</p>
+          <p class="text-light"> No 79 Stadium Road, Port Harcourt</p>
+          <p class="text-light fw-bold pt-2">Branch Office: </p>
+          <p class="text-light">No 13 Stadium Road, Port Harcourt</p>
+          <p class="text-light">No 38 Olu Obasano Road, Port Harcourt</p>
+        </div>
+        <div class="col-md-3">
+          <p class="text-light fw-bold pb-2">Information</p>
+          <ul class="list-unstyled text-light pt-2">
+            <li class="pb-4"> <a href="#about" class="text-decoration-none  text-light"> About Simel</a>
+            </li>
+            <li class="pb-4"> <a href="#contact" class="text-decoration-none  text-light"> Book an Appiontment</a>
+            </li>
+            <li> <a href="tyres.html" class="text-decoration-none  text-light"> Make an Order</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="text-light fw-bold pb-2">Newsletter Signup </p>
+          <p class="text-light pt-2">Join our news letter list to get all <br> the latest offers, discounts
+            and other
+            benefits
+          </p>
+
+
+          <form action="">
+            <div class="mb-3 ">
+              <input type="text" placeholder="Enter your Email address" class="form-control">
+              <div class="pt-4">
+                <a class="btn btn-warning " href="">SEND MESSAGE</a>
+              </div>
+              <p class="text-light pt-2">By subscribing, you accepted our <a href="" class="text-light">Policy</a> </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="text-light bg-dark pb-3 px-5 pt-4">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-md-10">
+          <p>&copy 2024 Simel Tyre & Battery Palace. All Rights Reserved.</p>
+        </div>
+
+        <div class="col-md-2 text-light footer2">
+          <div class="social-icons2">
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="../js/owl.carousel.min.js"></script>
+
+  <script src="../js/slider.js"></script>
+  <!-- this three script line is owl carousel that controls the services on the home page -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- line of code that manages typing effect on hero section of home page -->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS Bundle (includes Popper).this is for the testimonial column slider and 
+   the drop down link
+  in shop icon  and line of js that controls the toggle open and close for
+  the menu icon in the navbar on small screen. Thus it handles 3 duties-->
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- ANIMATION ON SCROLL LIBRARY -->
+
+
+
+  <script src="../js/tyres.js"></script>
+  <script src="./js/cart.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tyres.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <title>SIMEL</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg fixed-top 1030 bg-dark">
+            <div class="container">
+                <a class="navbar-brand text-light simel" href="#">SI<span class="text-warning">MEL</span> </a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu bg-dark text-justify">
+                                <li><a class="dropdown-item text-light bg-dark" href="tyres.html">Tyres & Wheels</a>
+                                </li>
+                                <li><a class="dropdown-item text-light bg-dark" href="battery.html">Batteries</a></li>
+                                <li><a class="dropdown-item text-light bg-dark" href="fluid.html">Fluids & Chemicals</a>
+                                </li>
+                                <li><a class="dropdown-item text-light bg-dark" href="caraccess.html">Car accesories</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cart.html">
+                                <div class="position-relative d-inline-block">
+                                    <i class="fas fa-cart-shopping fa-lg"></i>
+                                    <span id="cart-count"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                                        0
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end of bg -->
+
+    <div class="container py-5 ">
+        <h5 class="text-center text-warning pt-5 mb-4">🛒 Your Shopping Cart</h5>
+
+        <table class="table table-bordered bg-white">
+            <thead class="table-dark">
+                <tr>
+                    <th>Product</th>
+                    <th>Price (NGN)</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-table-body"></tbody>
+        </table>
+
+        <h3 class="text-end mt-3">Grand Total: NGN <span id="grand-total">0</span></h3>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+            <a href="tyres.html" class="btn btn-secondary">Continue Shopping</a>
+        </div>
+    </div>
+
+
+
+    <!-- start of footer -->
+
+    <footer class="bg-dark p-5">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Contact Us</p>
+                    <p class="text-light pt-2">Call us 24/7</p>
+                    <p class="text-warning fw-bold">0803939446</p>
+                    <p class="text-warning fw-bold">O8063711939</p>
+                    <p class="text-warning fw-bold">07037633703</p>
+                    <p class="text-light">tyrepalace@gmail.com</p>
+                    <p class="fw-bold text-light">Opening Hours</p>
+                    <p class="text-light">Monday - Saturdays </p>
+                    <p class="text-light">7:00am - 6:00pm</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Address </p>
+                    <p class="text-light fw-bold pt-2">Head Office:</p>
+                    <p class="text-light"> No 79 Stadium Road, Port Harcourt</p>
+                    <p class="text-light fw-bold pt-2">Branch Office: </p>
+                    <p class="text-light">No 13 Stadium Road, Port Harcourt</p>
+                    <p class="text-light">No 38 Olu Obasano Road, Port Harcourt</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Information</p>
+                    <ul class="list-unstyled text-light pt-2">
+                        <li class="pb-4"> <a href="index.html" class="text-decoration-none  text-light"> About Simel</a>
+                        </li>
+                        <li class="pb-4"> <a href="index.html" class="text-decoration-none  text-light"> Book an
+                                Appiontment</a>
+                        </li>
+                        <li> <a href="tyres.html" class="text-decoration-none  text-light"> Make an Order</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Newsletter Signup </p>
+                    <p class="text-light pt-2">Join our news letter list to get all <br> the latest offers, discounts
+                        and other
+                        benefits
+                    </p>
+                    <form action="">
+                        <div class="mb-3 ">
+                            <input type="text" placeholder="Enter your Email address" class="form-control">
+                            <div class="pt-4">
+                                <a class="btn btn-warning " href="">SEND MESSAGE</a>
+                            </div>
+                            <p class="text-light pt-2">By subscribing, you accepted our <a href=""
+                                    class="text-light">Policy</a> </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="text-light bg-dark pb-3 px-5 pt-4">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-10">
+                    <p>&copy 2024 Simel Tyre & Battery Palace. All Rights Reserved.</p>
+                </div>
+
+                <div class="col-md-2 text-light footer2">
+                    <div class="social-icons2">
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- end of footer -->
+
+
+
+
+
+
+
+
+    <!-- FUNCTION THAT COONTROLS ADD TO CART and makes the table visible on the cart page -->
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const cartBody = document.getElementById("cart-table-body");
+        const grandTotalEl = document.getElementById("grand-total");
+
+        function renderCart() {
+            cartBody.innerHTML = "";
+            let grandTotal = 0;
+
+            cart.forEach((item, index) => {
+                const total = item.price * item.quantity;
+                grandTotal += total;
+
+                const row = `
+        <tr>
+          <td>
+            <img src="${item.image}" alt="${item.name}" style="width:60px; height:60px; border-radius:6px; margin-right:8px;">
+            ${item.name} <br>
+            <small>${item.selectedOption || ""}</small>
+          </td>
+          <td>₦${item.price.toLocaleString()}</td>
+          <td>
+            <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity(${index}, -1)">−</button>
+            ${item.quantity}
+            <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity(${index}, 1)">+</button>
+          </td>
+          <td>₦${total.toLocaleString()}</td>
+          <td>
+            <button class="btn btn-sm btn-danger" onclick="removeItem(${index})">Remove</button>
+          </td>
+        </tr>
+      `;
+
+                cartBody.innerHTML += row;
+            });
+
+            grandTotalEl.textContent = "₦" + grandTotal.toLocaleString();
+        }
+
+        function updateQuantity(index, change) {
+            if (cart[index].quantity + change > 0) {
+                cart[index].quantity += change;
+                localStorage.setItem("cart", JSON.stringify(cart));
+                renderCart();
+            }
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            renderCart();
+        }
+
+        function clearCart() {
+            localStorage.removeItem("cart");
+            cart = [];
+            renderCart();
+            alert("Cart cleared!");
+        }
+
+        renderCart();
+
+
+    </script>
+
+
+
+    <!-- fubction that maages the badge attached to the cart icon on the navbar -->
+
+    <script>
+        function removeItem(index) {
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            renderCart();
+            updateCartBadge();
+        }
+
+        function updateQuantity(index, change) {
+            if (cart[index].quantity + change > 0) {
+                cart[index].quantity += change;
+                localStorage.setItem("cart", JSON.stringify(cart));
+                renderCart();
+                updateCartBadge();
+            }
+        }
+
+
+        renderCart();
+        updateCartBadge();
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <!-- line of js that manages the drop down link in shop icon -->
+
+
+
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <!-- line of js that controls the toggle open and close for the menu icon in the navbar on small screen -->
+
+
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

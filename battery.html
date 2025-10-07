@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tyres.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <title>SIMEL</title>
+</head>
+
+<body>
+
+
+    <div class="bg2">
+        <nav class="navbar navbar-expand-lg fixed-top 1030 bg-dark">
+            <div class="container">
+                <a class="navbar-brand text-light simel" href="#">SI<span class="text-warning">MEL</span> </a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu bg-dark text-justify">
+                                <li><a class="dropdown-item text-light bg-dark" href="tyres.html">Tyres & Wheels</a>
+                                </li>
+                                <li><a class="dropdown-item text-light bg-dark" href="battery.html">Batteries</a></li>
+                                <li><a class="dropdown-item text-light bg-dark" href="fluid.html">Fluids & Chemicals</a>
+                                </li>
+                                <li><a class="dropdown-item text-light bg-dark" href="caraccess.html">Car accesories</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cart.html">
+                                <div class="position-relative d-inline-block">
+                                    <i class="fas fa-cart-shopping fa-lg"></i>
+                                    <span id="cart-count"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                                        0
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" onsubmit="return false;">
+                        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-warning text-light me-2" id="searchButton" type="submit">Search</button>
+                        <button class="btn btn-secondary text-light" id="resetButton" type="button">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- start of bg content -->
+
+        <div class=" bgcontent2 d-flex flex-column text-start ">
+            <h1 class="pt-3 text-warning">Buy <br> Quality <br> Car Batteries</h1>
+
+            <p class="pt-3 text-light text-bold fs-4">Assured durability, standard and quality.
+            </p>
+            <div>
+                <a class="btn border-white rounded-4 text-white p-2 fw-bold bg-transparent " data-bs-toggle="modal"
+                    data-bs-target="#OurModal">TERMS & CONDITIONS</a>
+            </div>
+        </div>
+
+        <!-- end of bg content -->
+    </div>
+
+    <!-- end of bg -->
+
+
+    <!-- start of modal that controls the terms and condition button in the landing page -->
+    <div class="modal fade" id="OurModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">TERMS & CONDITIONS</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <p>Due to the fluctuating prices and instability with goods purchase. We are sorry to inform you
+                        that the prices of our goods could be subjected to changes and may not be the exact prices that
+                        have being displayed on the screen. We guarantee you that the quality, durabilty and assuraility
+                        of our goods remains steadfast admist all odds. Thank you for your patronage</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end of modal -->
+
+
+    <!-- start of battery products -->
+    <section class="pt-5 pb-5">
+        <div class="container bestseller">
+            <div class="row gy-5 text-start">
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat1.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">HANKOOK</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/item15.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">DELKOR</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat9.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">STARTER</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat5.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">SOLITE</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat2.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">NEWKING</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat3.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">KR</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat4.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">JACK</h5>
+                            <option value="prices">PRICES</option>
+                            <option value="60amps">60amps - NGN90,000</option>
+                            <option value="62amps">62amps - NGN100,000</option>
+                            <option value="75amps">75amps - NGN80,000</option>
+                            <option value="80amps">80amps - NGN94,000</option>
+                            <option value="90amps">90amps - NGN99,000</option>
+                            <option value="150amps">150amps - NGN87,000</option>
+                            <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat6.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">AK</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat8.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">STAR PLUS</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat7.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">POWER LINE</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat10.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">VANTUM</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+                            <img src="./images/bat12.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">ARNOLD</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="60amps">60amps - NGN90,000</option>
+                                <option value="62amps">62amps - NGN100,000</option>
+                                <option value="75amps">75amps - NGN80,000</option>
+                                <option value="80amps">80amps - NGN94,000</option>
+                                <option value="90amps">90amps - NGN99,000</option>
+                                <option value="150amps">150amps - NGN87,000</option>
+                                <option value="200amps">200amps - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end of battery section -->
+
+
+    <!-- start of code that manages the reset button on the navbar -->
+    <div class="container">
+        <p id="noResults" class="text-center text-danger fs-4 mt-4" style="display: none;">No products found.</p>
+    </div>
+    <!-- end of code that manages the reset button -->
+
+
+
+    <!-- start of footer -->
+
+    <footer class="bg-dark p-5">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Contact Us</p>
+                    <p class="text-light pt-2">Call us 24/7</p>
+                    <p class="text-warning fw-bold">0803939446</p>
+                    <p class="text-warning fw-bold">O8063711939</p>
+                    <p class="text-warning fw-bold">07037633703</p>
+                    <p class="text-light">tyrepalace@gmail.com</p>
+                    <p class="fw-bold text-light">Opening Hours</p>
+                    <p class="text-light">Monday - Saturdays </p>
+                    <p class="text-light">7:00am - 6:00pm</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Address </p>
+                    <p class="text-light fw-bold pt-2">Head Office:</p>
+                    <p class="text-light"> No 79 Stadium Road, Port Harcourt</p>
+                    <p class="text-light fw-bold pt-2">Branch Office: </p>
+                    <p class="text-light">No 13 Stadium Road, Port Harcourt</p>
+                    <p class="text-light">No 38 Olu Obasano Road, Port Harcourt</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Information</p>
+                    <ul class="list-unstyled text-light pt-2">
+                        <li class="pb-4"> <a href="index.html" class="text-decoration-none  text-light"> About Simel</a>
+                        </li>
+                        <li class="pb-4"> <a href="index.html" class="text-decoration-none  text-light"> Book an
+                                Appiontment</a>
+                        </li>
+                        <li> <a href="tyres.html" class="text-decoration-none  text-light"> Make an Order</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Newsletter Signup </p>
+                    <p class="text-light pt-2">Join our news letter list to get all <br> the latest offers, discounts
+                        and other
+                        benefits
+                    </p>
+                    <form action="">
+                        <div class="mb-3 ">
+                            <input type="text" placeholder="Enter your Email address" class="form-control">
+                            <div class="pt-4">
+                                <a class="btn btn-warning " href="">SEND MESSAGE</a>
+                            </div>
+                            <p class="text-light pt-2">By subscribing, you accepted our <a href=""
+                                    class="text-light">Policy</a> </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="text-light bg-dark pb-3 px-5 pt-4">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-10">
+                    <p>&copy 2024 Simel Tyre & Battery Palace. All Rights Reserved.</p>
+                </div>
+
+                <div class="col-md-2 text-light footer2">
+                    <div class="social-icons2">
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- end of footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <!-- line of js that manages the drop down link in shop icon -->
+
+
+
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <!-- line of js that controls the toggle open and close for the menu icon in the navbar on small screen -->
+
+
+    <script src="../js/tyres.js"></script>
+    <script src="../js/battery.js"></script>
+    <script src="./js/cart.js"></script>
+
+</body>
+
+</html>

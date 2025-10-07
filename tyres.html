@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <link rel="stylesheet" href="../css/tyres.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+
+    <title>SIMEL</title>
+</head>
+
+<body>
+    <!-- start of bg -->
+    <div class="bg2">
+        <!-- start of navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top 1030 bg-dark">
+            <div class="container">
+                <a class="navbar-brand text-light simel" href="#">SI<span class="text-warning">MEL</span> </a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu bg-dark text-justify">
+                                <li><a class="dropdown-item text-light bg-dark" href="tyres.html">Tyres & Wheels</a>
+                                </li>
+                                <li><a class="dropdown-item text-light bg-dark" href="battery.html">Batteries</a></li>
+                                <li><a class="dropdown-item text-light bg-dark" href="fluid.html">Fluids & Chemicals</a>
+                                </li>
+                                <li><a class="dropdown-item text-light bg-dark" href="caraccess.html">Car accesories</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cart.html">
+                                <div class="position-relative d-inline-block">
+                                    <i class="fas fa-cart-shopping fa-lg"></i>
+                                    <span id="cart-count"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                                        0
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search" onsubmit="return false;">
+                        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-warning text-light me-2" id="searchButton" type="submit">Search</button>
+                        <button class="btn btn-secondary text-light" id="resetButton" type="button">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- start of bg content -->
+
+        <div class=" bgcontent2 d-flex flex-column text-start ">
+            <h1 class="pt-3 text-warning">Buy <br> Quality <br> Tyres and Wheels</h1>
+
+            <p class="pt-3 text-light text-bold fs-4">Assured durability, standard and quality.
+            </p>
+            <div>
+                <a class="btn border-white rounded-4 text-white p-2 fw-bold bg-transparent " data-bs-toggle="modal"
+                    data-bs-target="#OurModal">TERMS & CONDITIONS</a>
+            </div>
+        </div>
+
+        <!-- end of bg content -->
+    </div>
+
+    <!-- end of bg -->
+
+    <!-- start of modal that controls the terms and condition button in the landing page -->
+    <div class="modal fade" id="OurModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">TERMS & CONDITIONS</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <p>Due to the fluctuating prices and instability with goods purchase. We are sorry to inform you
+                        that the prices of our goods could be subjected to changes and may not be the exact prices that
+                        have being displayed on the screen. We guarantee you that the quality, durabilty and assuraility
+                        of our goods remains steadfast admist all odds. Thank you for your patronage</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end of modal -->
+
+
+    <!-- start of  allptoducts search key, that helps you to select only wheels or tyres -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="filterSelect" class="form-label fw-bold text-dark">Filter by Category:</label>
+                <select class="form-select" id="filterSelect">
+                    <option value="all">All Products</option>
+                    <option value="tyres">Tyres</option>
+                    <option value="wheels">Wheels</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- end of  allptoducts  -->
+
+
+    <!-- start of tyre products -->
+    <section class="pt-5 pb-5">
+        <div class="container bestseller">
+            <div class="row gy-5 text-start">
+
+                <div class="col-6 col-md-3 ">
+                    <!-- n/b data category is linked to the all product codes thats above-->
+                    <div class="card " data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre10.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">205/55 R16</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN90,000</option>
+                                <option value="michellin">MICHELLIN - NGN100,000</option>
+                                <option value="austone">AUSTONE - NGN80,000</option>
+                                <option value="pirelli">PIRELLI - NGN94,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre12.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">225/40 R18</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body cart-item">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">195/65 R15</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre14.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">215/55 R16</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../images/tyre15.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">175/65 R14</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre16.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">185/65 R15</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre14.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">195/60 R15</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">275/40 R20</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">215/60 R16</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">175/65 R14</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">185/65 R15</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">185/60 R16</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">185/65 R16</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">185/70 R14</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">195/70 R14</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">215/60 R16</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">215/60 R16</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">225/40 R19</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">225/45 R19</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">235/35 R19</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">175/55 R13</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">185/65 R14</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">185/70 R15</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">195/60 R17</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">205/65 R13</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">195/75 R14</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">235/75 R17</h5>
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="tyres">
+                        <div class="card-body">
+                            <img src="../images/tyre13.webp" class="img-fluid" alt="">
+                            <h5 class="pt-1">285/75 R18</h5>
+
+                            <select class="form-select" id="filterSelect">
+                                <option value="prices">PRICES</option>
+                                <option value="maxxis">MAXXIS - NGN95,000</option>
+                                <option value="michellin">MICHELLIN - NGN110,000</option>
+                                <option value="austone">AUSTONE - NGN85,000</option>
+                                <option value="pirelli">PIRELLI - NGN97,000</option>
+                                <option value="doubleking">DOUBLE KING - NGN99,000</option>
+                                <option value="gtradial">GT RADIAL - NGN87,000</option>
+                                <option value="goodyear">GOODYEAR - NGN75,000</option>
+                            </select>
+
+                            <div class="stars pt-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end of tyre products -->
+
+
+
+
+    <!-- start of wheels -->
+    <section class="pt-5 pb-5">
+        <div class="container bestseller">
+            <div class="row gy-5 text-start">
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim2.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R12</h5>
+                            <p>NGN 50,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim3.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R13</h5>
+                            <p>NGN 55,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body cart-item">
+                            <img src="../images/rim4.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R14</h5>
+                            <p>NGN 57,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim5.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R15</h5>
+                            <p>NGN 59,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim6.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R16</h5>
+                            <p>NGN 61,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim1.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R17</h5>
+                            <p>NGN 63,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim9.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R18</h5>
+                            <p>NGN 65,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim10.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R19</h5>
+                            <p>NGN 68,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim12.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R20</h5>
+                            <p>NGN 69,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim13.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R21</h5>
+                            <p>NGN 71,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim14.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R22</h5>
+                            <p>NGN 75,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim18.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R13</h5>
+                            <p>NGN 56,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim18.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R14</h5>
+                            <p>NGN 59,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim19.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R15</h5>
+                            <p>NGN 60,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim20.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R17</h5>
+                            <p>NGN 75,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim21.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R19</h5>
+                            <p>NGN 71,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim23.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R20</h5>
+                            <p>NGN 72,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim25.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R21</h5>
+                            <p>NGN 74,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim26.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R22</h5>
+                            <p>NGN 85,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card" data-category="wheels">
+                        <div class="card-body">
+                            <img src="../images/rim29.jpeg" class="img-fluid" alt="">
+                            <h5 class="pt-1">R17</h5>
+                            <p>NGN 70,000</p>
+                            <div class="stars pt-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn btn-warning add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end of wheels -->
+
+    <!-- start of footer -->
+    <footer class="bg-dark p-5">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Contact Us</p>
+                    <p class="text-light pt-2">Call us 24/7</p>
+                    <p class="text-warning fw-bold">0803939446</p>
+                    <p class="text-warning fw-bold">O8063711939</p>
+                    <p class="text-warning fw-bold">07037633703</p>
+                    <p class="text-light">tyrepalace@gmail.com</p>
+                    <p class="fw-bold text-light">Opening Hours</p>
+                    <p class="text-light">Monday - Saturdays </p>
+                    <p class="text-light">7:00am - 6:00pm</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Address </p>
+                    <p class="text-light fw-bold pt-2">Head Office:</p>
+                    <p class="text-light"> No 79 Stadium Road, Port Harcourt</p>
+                    <p class="text-light fw-bold pt-2">Branch Office: </p>
+                    <p class="text-light">No 13 Stadium Road, Port Harcourt</p>
+                    <p class="text-light">No 38 Olu Obasano Road, Port Harcourt</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Information</p>
+                    <ul class="list-unstyled text-light pt-2">
+                        <li class="pb-4"> <a href="index.html" class="text-decoration-none  text-light"> About Simel</a>
+                        </li>
+                        <li class="pb-4"> <a href="index.html" class="text-decoration-none  text-light"> Book an
+                                Appiontment</a>
+                        </li>
+                        <li> <a href="tyres.html" class="text-decoration-none  text-light"> Make an Order</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light fw-bold pb-2">Newsletter Signup </p>
+                    <p class="text-light pt-2">Join our news letter list to get all <br> the latest offers, discounts
+                        and other
+                        benefits
+                    </p>
+                    <form action="">
+                        <div class="mb-3 ">
+                            <input type="text" placeholder="Enter your Email address" class="form-control">
+                            <div class="pt-4">
+                                <a class="btn btn-warning " href="">SEND MESSAGE</a>
+                            </div>
+                            <p class="text-light pt-2">By subscribing, you accepted our <a href=""
+                                    class="text-light">Policy</a> </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="text-light bg-dark pb-3 px-5 pt-4">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-10">
+                    <p>&copy 2024 Simel Tyre & Battery Palace. All Rights Reserved.</p>
+                </div>
+
+                <div class="col-md-2 text-light footer2">
+                    <div class="social-icons2">
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- end of footer -->
+
+
+    <!-- start of code that manages the reset button on the navbar -->
+    <div class="container">
+        <p id="noResults" class="text-center text-danger fs-4 mt-4" style="display: none;">No products found.</p>
+    </div>
+    <!-- end of code that manages the reset button -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <!-- line of js that manages the drop down link in shop icon -->
+
+
+
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <!-- line of js that controls the toggle open and close for the menu icon in the navbar on small screen -->
+
+
+
+
+    <script src="../js/tyres.js"></script>
+    <script src="../js/cart.js"></script>
+
+
+</body>
+
+</html>

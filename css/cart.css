@@ -1,0 +1,39 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* for space between brand logo and navbar components */
+.simel {
+    
+    padding-right: 30%;
+
+}
+
+.navbar ul li {
+    padding-left: 150px;
+
+}
+
+
+
+
+@media(max-width:992px){
+    .navbar ul li{
+   
+    padding-left: 5px;
+        
+         
+    }   
+}
+
+@media(max-width:600px){
+     .bgcontent{
+    
+        padding-left: 2px;   
+    } 
+}
+
+

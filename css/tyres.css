@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* for space between brand logo and navbar components */
+.simel {
+    
+    padding-right: 10%;
+
+}
+
+.navbar ul li {
+    padding-left: 90px;
+
+}
+
+@media(max-width:992px){
+    .navbar ul li{
+   
+    padding-left: 5px;
+        
+         
+    }   
+}
+
+@media(max-width:600px){
+     .bgcontent{
+    
+        padding-left: 2px;   
+    } 
+}
+
+
+
+.nav-link:hover{
+    color: #f5b900 !important; 
+}
+
+.dropdown-item:hover{
+    color: #f5b900 !important; 
+}
+
+
+.nav-link a:active{
+    color: #f5b900;
+}
+
+
+.bg2{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(../images/benz4.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-position-x: center;
+    background-position-y: 60%;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* styling of bgcontent2 */
+
+.bgcontent2{
+    padding-top: 100px;
+    padding-right: 50%;
+    padding-left: 200px;
+}
+
+@media(max-width:992px){
+    .bgcontent2{
+    padding-top: 90px;
+    padding-right: 10%;
+    padding-left: 50px;
+        
+         
+    }   
+}
+
+@media(max-width:600px){
+     .bgcontent2{
+     padding-top: 70px;
+    padding-right: 10%;
+    padding-left: 50px;
+          
+    } 
+}
+
+/*  styling of best seller */
+
+.bestseller img{
+    height: 40vh;
+
+}
+
+
+.stars {
+    
+    margin-bottom: 20px;
+}
+
+
+/* styling of footer */
+
+
+.social-icons2 i{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.footer2 .social-icons2 i:hover{
+    color: #ffc107;
+    transform: translateY(-5px);
+}
