@@ -94,40 +94,5 @@ $(document).ready(function(){
 
 
 
-//javascript code for selecting all products, that helps you select  tyres or wheels
-//  in the pictures...tyres.html
-    
-    const filterSelect = document.getElementById("filterSelect");
-    const productCards = document.querySelectorAll(".card");
-
-    filterSelect.addEventListener("change", function () {
-        const selectedCategory = this.value;
-
-        productCards.forEach(function (card) {
-            const cardCategory = card.getAttribute("data-category");
-
-            if (selectedCategory === "all" || cardCategory === selectedCategory) {
-                card.parentElement.style.display = "block";
-            } else {
-                card.parentElement.style.display = "none";
-            }
-        });
-    });
 
 
-//javascript code that enables a .json so that add to cart values are saved locally in
-//your cart without backend feautures..aids in the add to cat button functionality
-// function addToCart(productName, price) {
-//   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-//   const existingProduct = cart.find(item => item.productName === productName);
-  
-//   if (existingProduct) {
-//     existingProduct.quantity += 1;
-//   } else {
-//     cart.push({ productName, price, quantity: 1 });
-//   }
-
-//   localStorage.setItem("cart", JSON.stringify(cart));
-//   alert(`${productName} added to cart successfully!`);
-// }
