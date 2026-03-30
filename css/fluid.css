@@ -3,7 +3,9 @@
     margin: 0;
 }
 
-
+html, body {
+  overflow-x: hidden;
+}
 
 /* making of select option button responsive on small screen */
 
